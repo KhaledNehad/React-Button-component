@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Button from "./components/Button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Button title='Defualt' />
+      <Button title='Defualt' variant='outline' color='primary' />
+      <Button title='Defualt' variant='outline' color='danger' />
+      <Button title='Defualt' variant='outline' color='secondry' />
+      <Button title='Defualt' variant='text' color='primary' />
+      <Button title='Defualt' variant='text' color='danger' />
+      <Button title='Defualt' variant='text' color='secondry' />
+      <Button title='Defualt' color='primary' />
+      <Button title='Defualt' color='danger' size='sm' />
+      <Button title='Defualt' color='secondry' size='lg' />
+      <Button title='Defualt' color='primary' startIcon='local_grocery_store' />
+      <Button title='Defualt' color='primary' endIcon='local_grocery_store' />
     </div>
   );
 }
